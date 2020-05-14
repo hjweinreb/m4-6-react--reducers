@@ -55,12 +55,6 @@ function reducer(state, action) {
       };
     }
 
-    case 'clear-snackbar': {
-      return {
-        ...state,
-        status: 'idle',
-      };
-    }
 
     default:
       throw new Error(`Unrecognized action: ${action.type}`);
